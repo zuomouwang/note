@@ -2,11 +2,13 @@
   <div>
     <p @click="count++">{{ count }}</p>
     <LunboTu></LunboTu>
+    <add-count></add-count>
   </div>
 </template>
 
 <script>
 import LunboTu from '../components/lunbo/LunboTu.vue'
+import addCount from '../components/zxw/addCount.vue'
 export default {
   name: 'HomePage',
   data() {
@@ -15,7 +17,8 @@ export default {
     }
   },
   components: {
-    LunboTu
+    LunboTu,
+    addCount
   }
 }
 </script>
